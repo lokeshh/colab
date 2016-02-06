@@ -51,6 +51,8 @@ Colab::Application.routes.draw do
   # root :to => 'welcome#index'
   
   root :to => 'assignments#display'
+  
+  post 'assignments/upload' => 'assignments#upload', as: :upload_assignment
 
   # See how all your routes lay out with "rake routes"
 

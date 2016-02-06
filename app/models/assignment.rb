@@ -1,5 +1,5 @@
 class Assignment < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :rollno, :doc
   has_attached_file :doc,
     :storage => :google_drive,
     :google_drive_credentials => "#{Rails.root}/config/google_drive.yml",

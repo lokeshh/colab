@@ -2,6 +2,10 @@
   Enter your roll number and upload assignment.
 </p>
 
-<%= form_for @assignment, url: '/assignment/upload', html: { multipart: true } do |form| %>
+<%= form_for @assignment, url: upload_assignment_path, html: { multipart: true } do |form| %>
+  <%= form.label 'Roll No.' %>
+  <%= form.text_field :rollno %>
   <%= form.file_field :doc %>
+  <br> <br> <br>
+  <%= form.submit 'Submit' %>
 <% end %>
