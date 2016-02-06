@@ -1,3 +1,7 @@
 <p>
   Enter your roll number and upload assignment.
 </p>
+
+<%= form_for @assignment, url: '/assignment/upload', html: { multipart: true } do |form| %>
+  <%= form.file_field :doc %>
+<% end %>
