@@ -89,6 +89,7 @@ GEM
     pg (0.17.1)
     polyglot (0.3.5)
     power_assert (0.2.7)
+    puma (2.16.0)
     rack (1.4.7)
     rack-cache (1.6.0)
       rack (>= 0.4)
@@ -152,6 +153,7 @@ DEPENDENCIES
   jquery-rails
   paperclip-googledrive
   pg
+  puma
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3

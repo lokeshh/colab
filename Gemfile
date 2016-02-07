@@ -31,6 +31,7 @@ gem 'jquery-rails'
 
 group :production do
   gem 'pg'
+  gem 'puma'
 end
 
 # To use ActiveModel has_secure_password
